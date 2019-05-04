@@ -1,79 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  
-  background-color: #000000;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav_menu.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div id="nav-menu">
-  <ul>
-    <li><a href="#">HOME</a></li>
-    <li><a href="#">JOBS</a></li>
-    <li><a href="#">CONTACT</a></li>
-  </ul>
+  <div class="label">
+  <div>
+    <img src="imgs/a_litte_dog.jpg" alt="a_little_dog" style="border-radius: 50%; height: 64px; width: 64px">
+  </div>
+  <div id="nav-menu">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">JOBS</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </div>
 </div>
+  <h1 style="background-color: black;color: white; text-align: center;"> GENERAL INQUIRIES </h1>
 
+  <div class="container">
+    <form action="/action_page.php">
 
-<h3>GENERAL INQUIRIES</h3>
+      <div class="label">
+        <label for="name" >NAME</label>
+        <label for="require" style="color: orange; font-weight: bold;">required</label> 
+      </div>
+      <input type="text" id="name" name="fullname" placeholder="">
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="name">NAME</label>
-    <input type="text" id="name" name="fullname" placeholder="">
+      <div class="label">
+        <label for="email">EMAIL</label>
+        <label for="require" style="color: orange; font-weight: bold;">required</label> 
+      </div>
+      <input type="text" id="email" name="fullemail" placeholder="">
 
-    <label for="email">EMAIL</label>
-    <input type="text" id="email" name="fullemail" placeholder="">
+      <label for="req">NATURE OF INQUIRY</label>
+      <select id="req" name="desreq">
+        <option value="general">Geneal</option>
+        <option value="full">Full</option>
+        <option value="specific">Specific</option>
+      </select>
 
-    <label for="req">NATURE OF INQUIRY</label>
-    <select id="req" name="desreq">
-      <option value="general">Geneal</option>
-      <option value="full">Full</option>
-      <option value="specific">Specific</option>
-    </select>
-
-    <label for="message">MESSAGE</label>
-    <textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
-	
-	<label> 3 + 4 = ? </label>
-	<input type="text" id="result" name="result" placeholder="">
-	
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
+      <label for="message">MESSAGE</label>
+      <textarea id="message" name="message" placeholder="Nhap tin nhan o day" style="height:200px"></textarea>
+  	
+      <div class="label">
+      	<label> 3 + 4 = ? </label>
+      	<label for="require" style="color: orange; font-weight: bold;">required</label> 
+      </div>
+      <input type="text" id="result" name="result" placeholder="Nhap ket qua o day">
+  	
+      <input type="submit" value="Submit" style="width: 100%">
+    </form>
+  </div>
 </body>
 </html>
