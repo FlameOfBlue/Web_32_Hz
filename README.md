@@ -1,5 +1,5 @@
 # Web_32_Hz
-Github môn web TH16_32 </h1>
+Github môn web TH16_32 - update little funny thing
 ## Donate with [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PQYDBAMQ3D2UG)
 
 If you think this library is useful and saves you a lot of work and let you sleep much better, then donating a small amount would be very cool.

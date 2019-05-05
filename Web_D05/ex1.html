@@ -2,20 +2,20 @@
 <html>
 <head>
 	<title>EX-1</title>
-	<script type="text/javascript" src="ex1.js" async></script>
+	<script type="text/javascript" src="ex1.js" ></script>
 </head>
 <body>
 	<h1>Vui Lòng Chọn Ngày Tháng Năm Sinh</h1>
 
 	<label>Ngày</label>
-	<select id="date" name="date" required> </select>
+	<select id="date" name="dd" required> </select>
 
 	<label>Tháng</label>
-	<select id="month" name="month"> </select>
+	<select id="month" name="mm"> </select>
 
 	<label>Năm</label>
-	<select id="year" name="year"> </select>
+	<select id="year" name="yyyy"> </select>
 
-
+	<script type="text/javascript">date_populate("date", "month", "year");</script>
 </body>
 </html>
